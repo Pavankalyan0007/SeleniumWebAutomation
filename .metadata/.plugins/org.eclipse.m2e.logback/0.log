@@ -1234,3 +1234,4 @@
 2024-12-24 11:27:01,824 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\pavan\OneDrive\Desktop\SeleniumProject end to end\SeleniumFrameworkDesign\src\main\resources
 2024-12-24 11:27:01,832 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\pavan\OneDrive\Desktop\SeleniumProject end to end\SeleniumFrameworkDesign\src\test\resources
 2024-12-25 21:53:44,303 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-12-27 12:15:08,128 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
