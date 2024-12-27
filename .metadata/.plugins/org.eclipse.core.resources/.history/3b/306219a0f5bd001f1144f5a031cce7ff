@@ -1,0 +1,33 @@
+package Pavan.StepDefinition;
+
+import java.util.List;
+
+import org.openqa.selenium.WebElement;
+
+import PavanProject.pageobjects.LandingPage;
+import PavanProject.pageobjects.ProductCatalouge;
+import Pavanproj.TestComponents.BaseTest;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.When;
+
+public class StepDefinition extends BaseTest{
+    
+
+    public LandingPage landingPage;
+    public ProductCatalouge productCatalouge;
+    @Given("I landed on Ecommerace page")
+    public void I_landed_on_Ecommerace_page() {
+        landingPage = lauchApplication();  // assuming you meant 'launchApplication' instead of 'lauchApplication'
+    }
+    @Given("^Logged in with username (.+) and password (.+)$")
+    public void Logged_in_with_username_and_password(String username, String password) {
+    	ProductCatalouge productCatalouge = landingPage.loginApplication(username, password);
+    }
+    @When("^I add product  (.+) to cart$")
+    public void I_add_product_to_cart(String Product) throws Exception {
+    	List<WebElement> Products = productCatalouge.getProducts();
+        productCatalouge.AddProductToCart(Product);
+    }
+    @
+    
+}

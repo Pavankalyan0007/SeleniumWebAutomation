@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="Pavanproj.TestComponents.Listeners"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="Error Validation(failed)">
+    <classes>
+      <class name="Pavanproj.Tests.ErrorValidation">
+        <methods>
+          <include name="LoginValidation"/>
+          <include name="Close"/>
+          <include name="ProductErrorValidalition"/>
+          <include name="lauchApplication"/>
+        </methods>
+      </class> <!-- Pavanproj.Tests.ErrorValidation -->
+    </classes>
+  </test> <!-- Error Validation(failed) -->
+  <test thread-count="5" parallel="tests" name="Submit(failed)">
+    <classes>
+      <class name="Pavanproj.Tests.StandAloneTestPageObject">
+        <methods>
+          <include name="Close"/>
+          <include name="SubmitOrder" invocation-numbers="0 1"/>
+          <include name="lauchApplication"/>
+        </methods>
+      </class> <!-- Pavanproj.Tests.StandAloneTestPageObject -->
+    </classes>
+  </test> <!-- Submit(failed) -->
+</suite> <!-- Failed suite [Suite] -->

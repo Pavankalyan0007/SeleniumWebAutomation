@@ -1,0 +1,8 @@
+
+
+@CucumberOptions(features="")
+public class TestNgTestRunner {
+	
+	
+	
+}
