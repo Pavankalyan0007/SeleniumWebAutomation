@@ -52,6 +52,7 @@ public class StepDefinition extends BaseTest{
     public void message_is_displayed_confirmation_page(String string) {
     	String Confirmedmessage = confirmationpage.Confirmed();
     	Assert.assertTrue(Confirmedmessage.equalsIgnoreCase(string));
+    	System.out.println("Pavan");
     }
     
 }
